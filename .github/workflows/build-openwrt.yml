@@ -17,10 +17,10 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: false
-        default: 'true'
+        default: 'false'
 
 env:
-  REPO_URL: https://github.com/hikelin19871112/lede
+  REPO_URL: https://github.com/ghosthgy/lede
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
