@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/yufan666/lede
+  REPO_URL: https://github.com/zgiotsja/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -66,8 +66,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         cd package
-        git clone https://github.com/yufan666/openwrt-packages.git
-        git clone https://github.com/yufan666/small.git
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
